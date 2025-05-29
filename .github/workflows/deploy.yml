@@ -1,16 +1,18 @@
-git add .github/workflows/deploy.yml
-git commit -m "Add Netlify deployment workflow"
-git push
+name: Deploy to Netlify
 
+<<<<<<< HEAD
 git add .github/workflows/deploy.yml
 git commit -m "Add Netlify deployment workflow"
 git push
 name: Deploy to Netlify
 
+=======
+>>>>>>> a31070e6d607bcbe274073ee6a43e8216a8c7e3a
 on:
   push:
     branches:
       - main
+<<<<<<< HEAD
 
 jobs:
   build-and-deploy:
@@ -44,4 +46,37 @@ jobs:
             --dir=./ \
             --site=$NETLIFY_SITE_ID
 
+=======
+>>>>>>> a31070e6d607bcbe274073ee6a43e8216a8c7e3a
 
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install Sass
+        run: npm install -g sass
+
+      - name: Build SCSS
+        run: sass scss/main.scss css/main.css --style=compressed
+
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID:    ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          netlify deploy \
+            --prod \
+            --dir=./ \
+            --site=$NETLIFY_SITE_ID
