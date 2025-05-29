@@ -1,0 +1,102 @@
+main {
+  padding: 2rem;
+}
+
+header {
+  background-color: $primary-color;
+  color: $color-blanco;
+  padding: 1rem;
+}
+// =========================
+// Alineación de tarjetas
+// =========================
+.products {
+  @include grid-layout(repeat(auto-fit, minmax(250px, 1fr)), $box-spacing);
+  align-items: start;      // todas las celdas arrancan arriba
+  justify-items: center;   // centra cada tarjeta en su celda
+}
+
+.product-card, .card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between; // empuja el footer al final
+  height: 100%;                   // ocupa toda la altura de la celda
+  box-sizing: border-box;         // respeta padding y border en el box model
+}
+
+// =========================
+// Alineación de texto interno en tarjetas
+// =========================
+.product-card, .card {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  // centra elementos
+    text-align: center;   // centra todos los textos
+  }
+}
+
+// =========================
+// Layout de tarjetas: 4 columnas en desktop, auto-fit en móvil
+// =========================
+.products {
+  @include grid-layout(repeat(auto-fit, minmax(200px, 1fr)), $box-spacing);
+  gap: $box-spacing;
+  align-items: start;      // todas las celdas arrancan arriba
+  justify-items: center;   // centra cada tarjeta en su celda
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// =========================
+// Alineación de tarjetas flex
+// =========================
+.product-card, .card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between; // empuja el footer al final
+  height: 100%;                   // ocupa toda la altura de la celda
+  box-sizing: border-box;         // respeta padding y border en el box model
+}
+
+// =========================
+// Alineación de texto interno en tarjetas
+// =========================
+.product-card, .card {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  // centra elementos
+    text-align: center;   // centra todos los textos
+  }
+}
+
+// =========================
+// Alineación de sección de categorías
+// =========================
+.categories {
+  @include grid-layout(repeat(auto-fit, minmax(200px, 1fr)), $box-spacing);
+  justify-items: center;  // centra cada celda horizontalmente
+  align-items: start;     // arranca todo desde arriba
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr); // fuerza 3 columnas en desktop
+  }
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    // centra la imagen y el texto
+  text-align: center;     // centra el texto del label
+  height: 100%;           // igual altura si quieres fondo uniforme
+  box-sizing: border-box;
+}
+
+.category-card img {
+  width: 100%;
+  max-width: 300px;       // o el tamaño que necesites
+  border-radius: .5rem;
+}

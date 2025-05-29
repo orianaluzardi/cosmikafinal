@@ -1,0 +1,76 @@
+/* CONTACTO.CSS - Estilos personalizados para la página de contacto */
+
+/* Fuente general */
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Color de fondo personalizado para navbar y footer */
+  .bg-beige {
+    background-color: #e7d3aa;
+  }
+  
+  /* Títulos principales */
+  h2.fw-bold {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Textos secundarios */
+  p.lead, p {
+    color: #555;
+  }
+  
+  /* Sección de contacto (iconos y datos) */
+  .list-unstyled h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .list-unstyled p {
+    font-size: 0.95rem;
+  }
+  
+  /* Etiquetas del formulario */
+  .form-label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Campos del formulario */
+  .form-control {
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  /* Área de mensaje */
+  textarea.form-control {
+    resize: none;
+  }
+  
+  /* Botón enviar */
+  .btn-submit {
+    background-color: #b9974c;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #a7853e;
+  }
+  
+  /* Responsive (mobile) */
+  @media (max-width: 767.98px) {
+    .list-unstyled {
+      text-align: center;
+    }
+  
+    form {
+      margin-top: 2rem;
+    }
+  }
+  

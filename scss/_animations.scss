@@ -1,0 +1,80 @@
+
+// =========================
+// Animaciones y Transiciones
+// =========================
+
+// Fade-in general
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+// Scale up on hover
+@keyframes scaleUp {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+// Bounce for buttons
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+// Aplicación de animaciones
+.products .product-card, .products .card {
+  animation: fadeIn 0.6s ease-in;
+  transition: transform 0.3s ease;
+}
+
+.products .product-card:hover, .products .card:hover {
+  animation: scaleUp 0.3s forwards;
+}
+
+.btn, button {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  animation: bounce 0.5s ease;
+}
+
+// Smooth section reveal
+section {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+// =========================
+// Animación SlideInUp
+// =========================
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Aplicar slideInUp a secciones con delays
+.hero {
+  opacity: 0;
+  animation: slideInUp 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.categories, .products {
+  opacity: 0;
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+.categories {
+  animation-delay: 0.5s;
+}
+
+.products {
+  animation-delay: 0.7s;
+}

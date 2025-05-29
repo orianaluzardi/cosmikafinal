@@ -1,0 +1,110 @@
+/* PRODUCTO.CSS - Estilos personalizados para la página de producto Cosmika */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .bg-beige {
+    background-color: #e7d3aa;
+  }
+  
+  /* Miniaturas */
+  .img-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s;
+  }
+  
+  .img-thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Imagen principal */
+  .img-fluid {
+    max-height: 400px;
+    object-fit: contain;
+  }
+  
+  /* Sección de producto */
+  main .row {
+    align-items: center;
+  }
+  
+  /* Títulos y precios */
+  h2.fw-bold {
+    font-size: 2rem;
+  }
+  
+  h4.text-muted {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Reseñas */
+  small {
+    color: #666;
+  }
+  
+  /* Botón de cantidad */
+  .btn-outline-dark.btn-sm {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  
+  input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 32px;
+  }
+  
+  /* Botón añadir al carrito */
+  .btn-dark {
+    background-color: #000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-dark:hover {
+    background-color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #000;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive ajustes */
+  @media (max-width: 767.98px) {
+    .img-thumbnail {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .img-fluid {
+      max-height: 300px;
+    }
+  
+    main .row {
+      flex-direction: column;
+    }
+  
+    .d-flex.align-items-center.mb-3 {
+      justify-content: center;
+    }
+  }
+  

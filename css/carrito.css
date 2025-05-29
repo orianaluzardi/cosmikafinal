@@ -1,0 +1,92 @@
+/* CARRITO.CSS - Estilos personalizados para la página de carrito de Cosmika */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .bg-beige {
+    background-color: #e7d3aa;
+  }
+  
+  /* Imagen miniatura producto */
+  .img-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: none;
+  }
+  
+  /* Tabla carrito */
+  .table {
+    vertical-align: middle;
+  }
+  
+  .table th {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .table td {
+    font-size: 0.95rem;
+  }
+  
+  /* Input cantidad */
+  input[type="number"] {
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Botón eliminar producto */
+  .btn-link {
+    font-size: 1.2rem;
+  }
+  
+  .btn-link:hover {
+    color: #c00;
+  }
+  
+  /* Card resumen */
+  .card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card .btn-dark {
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 8px 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 767.98px) {
+    .table thead {
+      display: none;
+    }
+  
+    .table tbody td {
+      display: block;
+      text-align: right;
+    }
+  
+    .table tbody td::before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #666;
+    }
+  
+    .card {
+      margin-top: 2rem;
+    }
+  }
+  

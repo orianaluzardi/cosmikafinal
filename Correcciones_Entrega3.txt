@@ -1,0 +1,26 @@
+
+✅ CORRECCIONES APLICADAS SEGÚN DEVOLUCIÓN DE LA PROFESORA
+
+1. Estructura HTML y semántica:
+   - Se agregó la etiqueta <main> en todas las páginas HTML.
+   - Se revisó la jerarquía de títulos: se eliminaron los H5 heredados de Bootstrap y se reemplazaron por etiquetas personalizadas.
+   - Se renombraron todos los archivos y carpetas para que no contengan mayúsculas, espacios, tildes ni caracteres especiales.
+   - Se reemplazaron las tablas por estructuras con Flexbox o Grid en carrito, productos y formulario de contacto.
+
+2. CSS y SCSS:
+   - Todo el CSS fue unificado en un solo archivo SCSS (main.scss) que se compila a main.css.
+   - No se modifican directamente clases de Bootstrap. Se usan clases propias (.producto-card, .formulario-contacto, etc.) para estilizar los componentes.
+   - Se creó estructura SCSS con variables, mixins, base, layout y componentes personalizados.
+
+3. Maquetación:
+   - Se eliminaron componentes base de Bootstrap como cards o grids.
+   - Se añadieron al menos 3 secciones maquetadas únicamente con Flexbox y Grid creados manualmente.
+     > - Productos (shop.html)
+     > - Carrito de compras (carrito.html)
+     > - Formulario de contacto (contacto.html)
+
+4. Responsive:
+   - Se mantiene el diseño adaptativo sin overflow-x.
+   - Se agregaron media queries con unidades relativas en el SCSS.
+
+Este resumen acompaña el proyecto final listo para entrega.

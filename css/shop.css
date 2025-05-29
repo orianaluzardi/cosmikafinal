@@ -1,0 +1,85 @@
+/* SHOP.CSS - Estilos para la tienda Cosmika */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.product-card {
+  border: none;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+}
+
+.btn-cart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #dec187;
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  color: #000;
+  border-radius: 4px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.price-current {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.price-old {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.bg-beige {
+  background-color: #f4e6c6 !important;
+}
+
+footer {
+  font-size: 0.9rem;
+  background-color: #f4e6c6;
+}
+
+.navbar .nav-link.active {
+  font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+  .card-img-top {
+    height: 200px;
+  }
+  .btn-cart {
+    top: 6px;
+    left: 6px;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}

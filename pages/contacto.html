@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmika - Contacto</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel=\"stylesheet\" href=\"../css/shop.css\">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-beige py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="../index.html">Cosmika</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Shop.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<header class="bg-light text-center py-5" style="background-image: url('../assets/bannerContacto.png'); background-size: cover; background-position: center;">
+  <div class="container">
+    <h1 class="display-5 text-dark">Contacto</h1>
+    <p class="lead">Home > Contacto</p>
+  </div>
+</header>
+
+<!-- CONTACTO -->
+<main class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Ponete en contacto con nosotros</h2>
+    <p>Para obtener más información sobre nuestros productos o servicios. ¡No dudes en enviarnos un correo electrónico!</p>
+  </div>
+
+  <div class="row g-5">
+    <!-- Información de contacto -->
+    <div class="col-md-5">
+      <ul class="list-unstyled">
+        <li class="mb-4">
+          <h5><i class="fas fa-map-marker-alt me-2"></i>Dirección</h5>
+          <p>Av Constitución 46783</p>
+        </li>
+        <li class="mb-4">
+          <h5><i class="fas fa-phone me-2"></i>Teléfono</h5>
+          <p>Mobile: +54 2276654734<br>Hotline: +54 2276654734</p>
+        </li>
+        <li class="mb-4">
+          <h5><i class="fas fa-clock me-2"></i>Horario</h5>
+          <p>Lunes a viernes: 9:00 - 22:00<br>Sábados y domingos: 9:00 - 21:00</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="col-md-7">
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Abc">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Dirección de correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Abc@def.com">
+        </div>
+        <div class="mb-3">
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="asunto" placeholder="Este campo es opcional">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-beige py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Contacto</h6>
+        <p>Mar del Plata, Argentina</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="../index.html" class="text-decoration-none">Inicio</a></li>
+          <li><a href="Shop.html" class="text-decoration-none">Tienda</a></li>
+          <li><a href="#" class="text-decoration-none">Sobre Nosotros</a></li>
+          <li><a href="contacto.html" class="text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Newsletter</h6>
+        <p>Suscribite para recibir ofertas</p>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <small>&copy; 2025 Cosmika. Todos los derechos reservados.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- FontAwesome para iconos -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
